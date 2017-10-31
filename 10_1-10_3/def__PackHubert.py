@@ -50,6 +50,7 @@ def model_signal(x, seg):
     taille = [(i - j)  for  i,j  in  zip(seg[1:len(seg)],seg[0:len(seg)-1])]
     k=1000
     model_signal = []
+    k=52
     for n in taille :
         mean = [float(np.mean([x[k:k+n]]))]*n
         model_signal[k:k+n] = mean[:]
