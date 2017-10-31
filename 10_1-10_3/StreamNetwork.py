@@ -74,7 +74,7 @@ ncurrentstep=1
 #===============================================================================
 #/extraction of the flow accumulation raster ...
 if str(StepDEM) == "Original DEM" :
-    if str(IncludeStreamBurning) == "true" :
+    if str(IncludeStreamBurning) == "false" :
         nstep+=1
         arcpy.AddMessage("Burning the DEM - Step " + str(ncurrentstep) + "/" + str(nstep))
         (path, name) = os.path.split(UserDEM)
